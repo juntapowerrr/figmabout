@@ -1,0 +1,170 @@
+//variables
+
+//color
+$bgc: rgba(247, 237, 232, 0.6);
+$red: #C93228;
+$gray: #232323;
+$blue: #ACA7CB;
+$black: #000000;
+$white: #ffffff;
+$bgc2: #F7EDE8;
+$gray2: #4D4D4D;
+//font-size
+$font-size-xxs: 12px;
+$font-size-xs: 14px;
+$font-size-s: 16px;
+$font-size-m: 23px;
+$font-size-l: 36px;
+$font-size-xl: 60px;
+$font-size-xxl: 96px;
+
+
+//containers
+.container {
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+//text
+.txt {
+
+    //color
+    &--gray {
+        color: $gray;
+    }
+
+    &--gray2 {
+        color: $gray2;
+    }
+
+    &--red {
+        color: $red;
+    }
+
+    &--blue {
+        color: $blue;
+    }
+
+    &--black {
+        color: $black;
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    //font-size
+    &--xxs {
+        font-size: $font-size-xxs;
+    }
+
+    &--xs {
+        font-size: $font-size-xs;
+    }
+
+    &--s {
+        font-size: $font-size-s;
+    }
+
+    &--m {
+        font-size: $font-size-m;
+    }
+
+    &--l {
+        font-size: $font-size-l;
+    }
+
+    &--xl {
+        font-size: $font-size-xl;
+    }
+
+    &--xxl {
+        font-size: $font-size-xxl;
+    }
+
+    //font-weight
+    &--fw400 {
+        font-weight: 400;
+    }
+
+    &--fw500 {
+        font-weight: 500;
+    }
+
+    &--fw600 {
+        font-weight: 600;
+    }
+
+    &--fw700 {
+        font-weight: 700;
+    }
+
+    &--fw800 {
+        font-weight: 800;
+    }
+
+    &--fw900 {
+        font-weight: 900;
+    }
+
+    //position and CAPS
+    &--center {
+        text-align: center;
+    }
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.bgc {
+    &--main {
+        background-color: $bgc;
+    }
+
+    &--second {
+        background-color: $bgc2;
+    }
+
+    &--white {
+        background-color: $white;
+    }
+}
+
+.btn {
+    color: $white;
+    background-color: $gray;
+    padding: 20px 40px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: $font-size-xs;
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+
+.hv:hover {
+    transform: scale(1.02);
+    transition: all .5s ease-in-out;
+}
+
+.hv-btn:hover {
+    color: $gray;
+    background-color: $white;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.75);
+    border: 1px solid $gray;
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
+}
+
+.hv-btn2:hover {
+    color: $red;
+    border: 1px solid $red;
+    transition: all .3s ease-in-out;
+}
+
+.hv-red:hover {
+    color: $red;
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
+}

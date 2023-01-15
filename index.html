@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1300px">
+    <title>Головна</title>
+    <link rel="stylesheet" href="styles/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="preloader">
+        <img class="preloader__image" src="./assets/svg/preloader.svg" alt="Зображення прелоадеру сторінки">
+    </div>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 1000);
+        }
+    </script>
+    <header class="header bgc--main">
+        <div class="header__wrapper container wow animate__animated animate__fadeInDown" data-wow-delay="1s">
+            <div class="logo">
+                <span class="txt--m txt--gray txt--fw400 txt--uppercase">Figma</span>
+                <p class="txt--xxs txt--red txt--fw400">more<br>about</p>
+            </div>
+            <ul class="menu">
+                <li><a class="txt--s txt--gray txt--fw700" href="#">Головна</a></li>
+                <li><a class="txt--s txt--gray txt--fw700" href="#">Відеоуроки</a></li>
+                <li><a class="txt--s txt--gray txt--fw700" href="#">Лекції</a></li>
+                <li><a class="txt--s txt--gray txt--fw700" href="#">Завдання</a></li>
+                <li><a class="txt--s txt--gray txt--fw700" href="#">Додатково</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-section bgc--main">
+        <div class="main-section__wrapper container">
+            <h1 class="txt--xxl txt--red txt--fw400 txt--center txt--uppercase wow animate__animated animate__zoomIn"
+                data-wow-delay="1s">
+                Figma</h1>
+            <h2 class="txt--xxl txt--gray txt--fw400 txt--center wow animate__animated animate__zoomInUp"
+                data-wow-delay="1s">more about
+            </h2>
+            <p class="txt--s txt--gray txt--fw500 txt--center wow animate__animated animate__zoomIn"
+                data-wow-delay="1s">Тут ви навчитесь
+                проєктувати дизайн сайтів та
+                застосунків, створювати інтерактивні прототипи, бачити
+                історію усіх версій продукту та багато іншого!
+            </p>
+            <button class="btn hv-btn wow animate__animated animate__flipInX" data-wow-delay="1s">Детальніше</button>
+            <div class="cards">
+                <div class="card bgc--white hv wow animate__animated animate__zoomInLeft" data-wow-delay="1s">
+                    <img src="./assets/svg/card1.svg" alt="Зображення картки з тестами">
+                    <span class="txt--l txt--blue txt--fw700 txt--center">Тести</span>
+                </div>
+                <div class="card bgc--white hv wow animate__animated animate__zoomIn" data-wow-delay="1s">
+                    <img src="./assets/svg/card2.svg" alt="Зображення картки з лекціями">
+                    <span class="txt--l txt--blue txt--fw700 txt--center">Лекції</span>
+                </div>
+                <div class="card bgc--white hv wow animate__animated animate__zoomInRight" data-wow-delay="1s">
+                    <img src="./assets/svg/card3.svg" alt="Зображення картки з відеоуроками">
+                    <span class="txt--l txt--blue txt--fw700 txt--center">Відеоуроки</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lections-section bgc--second">
+        <div class="lections-section__wrapper container">
+            <h2 class="txt--xl txt--gray txt--fw700 txt--center wow animate__animated animate__zoomIn">Лекції</h2>
+            <div class="cards">
+                <div class="card wow animate__animated animate__bounceIn">
+                    <div class="card__about">
+                        <img src="./assets/images/cover1.png" alt="Зображення картки з лекції 1">
+                        <div class="card__about-titles">
+                            <h4 class="txt--s txt--red txt--fw700">Лекція 1</h4>
+                            <h3 class="txt--m txt--red txt--fw700">Знайомство з Figma</h3>
+                            <p class="txt--xs txt--gray txt--fw500">Запуск Figma та створення облікового запису. Огляд
+                                інтерфейсу Figma.</p>
+                        </div>
+                    </div>
+                    <div class="card__more">
+                        <button class="hv-btn2">Тест</button>
+                        <a href="#" class="txt--xxs txt--gray txt--fw700 hv-red"
+                            onclick="window.open('https://frusia.pro/ru/p/7')">Детальніше</a>
+                    </div>
+                </div>
+                <div class="card wow animate__animated animate__bounceIn">
+                    <div class="card__about">
+                        <img src="./assets/images/cover2.png" alt="Зображення картки з лекції 2">
+                        <div class="card__about-titles">
+                            <h4 class="txt--s txt--red txt--fw700">Лекція 2</h4>
+                            <h3 class="txt--m txt--red txt--fw700">Основи роботи з Figma</h3>
+                            <p class="txt--xs txt--gray txt--fw500">Робота з сітками, Grid система. Каркас сайту або
+                                Wireframe.</p>
+                        </div>
+                    </div>
+                    <div class="card__more">
+                        <button class="hv-btn2">Тест</button>
+                        <a href="#" class="txt--xxs txt--gray txt--fw700 hv-red"
+                            onclick="window.open('https://frusia.pro/ru/p/8')">Детальніше</a>
+                    </div>
+                </div>
+                <div class="card wow animate__animated animate__bounceIn">
+                    <div class="card__about">
+                        <img src="./assets/images/cover3.png" alt="Зображення картки з лекції 3">
+                        <div class="card__about-titles">
+                            <h4 class="txt--s txt--red txt--fw700">Лекція 3</h4>
+                            <h3 class="txt--m txt--red txt--fw700">Робота з текстами</h3>
+                            <p class="txt--xs txt--gray txt--fw500">Текстові об’єкти. Стилі тексту.</p>
+                        </div>
+                    </div>
+                    <div class="card__more">
+                        <button class="hv-btn2">Тест</button>
+                        <a href="#" class="txt--xxs txt--gray txt--fw700 hv-red"
+                            onclick="window.open('https://frusia.pro/ru/p/9')">Детальніше</a>
+                    </div>
+                </div>
+                <div class="card wow animate__animated animate__bounceIn">
+                    <div class="card__about">
+                        <img src="./assets/images/cover4.png" alt="Зображення картки з лекції 4">
+                        <div class="card__about-titles">
+                            <h4 class="txt--s txt--red txt--fw700">Лекція 4</h4>
+                            <h3 class="txt--m txt--red txt--fw700">Робота з зображеннями</h3>
+                            <p class="txt--xs txt--gray txt--fw500">Маски. Фотографії. Режими накладення. Монтажні
+                                області.</p>
+                        </div>
+                    </div>
+                    <div class="card__more">
+                        <button class="hv-btn2">Тест</button>
+                        <a href="#" class="txt--xxs txt--gray txt--fw700 hv-red"
+                            onclick="window.open('https://frusia.pro/ru/p/10')">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-block">
+                <button class="btn hv-btn wow animate__animated animate__flipInX">Всі лекції</button>
+            </div>
+        </div>
+    </div>
+    <div class="lessons-section bgc--second">
+        <div class="lessons-section__wrapper container">
+            <h2 class="txt--xl txt--black txt--fw700 txt--center wow animate__animated animate__zoomIn">Відеоуроки</h2>
+            <div class="arrows">
+                <img class="hv wow animate__animated animate__pulse" src="./assets/svg/arrowbl.svg"
+                    alt="Зображення елемента лівої стрілки">
+                <img class="hv wow animate__animated animate__pulse" src="./assets/svg/arrowred.svg"
+                    alt="Зображення елемента правої стрілки">
+            </div>
+            <div class="cards">
+                <div class="card wow animate__animated animate__backInLeft">
+                    <div class="yt-video hv">
+                        <iframe width="490" height="280" src="https://www.youtube.com/embed/8jCKxNGSUtk?controls=0"
+                            title="YouTube video player" frameborder=""
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3 class="txt--m txt--gray txt--fw500">Figma. Урок 1</h3>
+                    <p class="txt--m txt--gray txt--fw400">Знайомство з Figma. Створення першого проєкту.</p>
+                </div>
+                <div class="card wow animate__animated animate__backInRight">
+                    <div class="yt-video hv">
+                        <iframe width="490" height="280" src="https://www.youtube.com/embed/o6WFSiu6i2M?controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h3 class="txt--m txt--gray txt--fw500">Figma. Урок 2</h3>
+                    <p class="txt--m txt--gray txt--fw400">Можливості програми. Інтерфейс.</p>
+                </div>
+            </div>
+            <div class="btn-block">
+                <button class="btn hv-btn wow animate__animated animate__flipInX">Всі відеоуроки</button>
+            </div>
+        </div>
+    </div>
+    <div class="links-section bgc--second">
+        <div class="links-section__wrapper container">
+            <h2 class="txt--xl txt--gray txt--fw700 txt--center wow animate__animated animate__zoomIn">Корисні посилання
+            </h2>
+            <p class="txt--m txt--gray2 txt--fw500 txt--center wow animate__animated animate__zoomIn">Статті, відео.</p>
+            <div class="cards">
+                <div class="card wow animate__animated animate__fadeInLeft"
+                    onclick="window.open('https://cases.media/article/garyachi-klavishi-figma-redaguvannya-obirannya-pereglyad')">
+                    <img src="./assets/images/link1.png" alt="Зображення картки з корисними посиланнями">
+                    <span class="txt--xs txt--gray txt--fw700">Статті</span>
+                    <h3 class="txt--l txt--red txt--fw700">Гарячі клавіші</h3>
+                    <p class="txt--xs txt--gray txt--fw500">
+                        Знання гарячих клавіш Figma — це чудовий спосіб пришвидшити вашу роботу в цьому редакторі.
+                        В цьому матеріалі ми зробили для вас добірку гарячих клавіш для роботи з інструментами Figma.
+                    </p>
+                    <div class="card__more">
+                        <div class="btn-block">
+                            <button class="hv-btn2">figma</button>
+                        </div>
+                        <span class="txt--xxs txt--gray txt--fw700">Sep 24, 2022</span>
+                    </div>
+                </div>
+                <div class="card wow animate__animated animate__fadeInRight"
+                    onclick="window.open('https://www.komarov.design/10-instrumientiv-poiednannia-shriftiv-dlia-dizainieriv/')">
+                    <img src="./assets/images/link2.png" alt="Зображення картки з корисними посиланнями">
+                    <span class="txt--xs txt--gray2 txt--fw700">Відео</span>
+                    <h3 class="txt--l txt--gray txt--fw700">Шрифтові пари</h3>
+                    <p class="txt--xs txt--gray txt--fw500">
+                        Як підібрати правильні комбінації шрифтових пар та перконатися у їх гармонійності за допомогою
+                        сторонніх сервісів
+                    </p>
+                    <div class="card__more">
+                        <div class="btn-block">
+                            <button class="hv-btn2">fonts</button>
+                            <button class="hv-btn2">creative</button>
+                            <button class="hv-btn2">figma</button>
+                        </div>
+                        <span class="txt--xxs txt--gray txt--fw700">Sep 24, 2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-block2">
+                <button class="btn hv-btn wow animate__animated animate__flipInX">Всі посилання</button>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

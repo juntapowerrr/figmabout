@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tomatoes');
+
+@import 'reset';
+@import 'common';
+@import 'preloader';
+
+.header {
+    padding: 50px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            position: relative;
+
+            p {
+                position: absolute;
+                top: -20px;
+                left: 100px;
+                font-family: 'Tomatoes', sans-serif;
+                line-height: 14px;
+            }
+        }
+
+        .menu {
+            display: flex;
+
+            li {
+                margin-right: 60px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a:hover {
+                    color: $red;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}
+
+.main-section {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1,
+        h2 {
+            line-height: $font-size-xxl;
+            //letter-spacing: -4px;
+        }
+
+        h2 {
+            font-family: 'Tomatoes', sans-serif;
+        }
+
+        p {
+            max-width: 450px;
+            margin-top: 25px;
+        }
+
+        .btn {
+            margin: 35px 0;
+        }
+
+        .cards {
+            display: flex;
+            margin: 80px 0;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 370px;
+                height: 370px;
+                border-radius: 12px;
+                margin: 0 10px;
+                overflow: hidden;
+
+                img {
+                    max-width: 300px;
+                    max-height: 300px;
+                }
+
+                span {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.lections-section {
+    &__wrapper {
+        h2 {
+            padding: 60px 0;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+                width: 530px;
+                height: 250px;
+                background-color: $white;
+                border: 2px solid $black;
+                border-radius: 12px;
+                padding: 15px;
+                margin: 10px;
+
+                &:first-child,
+                &:last-child {
+                    box-shadow: 10px 10px 0px $blue;
+                }
+
+                &__about {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &-titles {
+                        margin-left: 20px;
+
+                        h3 {
+                            margin-top: 5px;
+                        }
+
+                        p {
+                            border-top: 0.5px solid $gray2;
+                            margin-top: 25px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+
+                &__more {
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    button {
+                        width: 58px;
+                        height: 31px;
+                        border: 1px solid $gray2;
+                        border-radius: 4px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .btn-block {
+            padding: 50px 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.lessons-section {
+    &__wrapper {
+        padding: 100px 0;
+
+        .arrows {
+            text-align: center;
+            margin: 30px 0;
+
+            img {
+                cursor: pointer;
+                margin: 0 20px;
+            }
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+
+            .card {
+                width: 570px;
+                max-height: 500px;
+                background-color: $white;
+                border-radius: 8px;
+                padding: 20px 40px 50px 40px;
+                margin: 0 10px;
+
+                .yt-video {
+                    iframe {
+                        border-radius: 10px;
+                    }
+                }
+
+                h3 {
+                    margin-top: 10px;
+                }
+
+                p {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .btn-block {
+            padding: 50px 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.links-section {
+    padding: 50px 0;
+
+    &__wrapper {
+        p {
+            margin: 20px 0 50px 0;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+
+            .card {
+                width: 570px;
+                max-height: 630px;
+                background: $bgc2;
+                border: 2px solid $black;
+                border-radius: 8px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                margin: 0 10px;
+
+                &:hover {
+                    cursor: pointer;
+                    border: 2px solid $red;
+                    transform: scale(1.01);
+                    transition: all .5s ease;
+                }
+
+                &:first-child {
+                    box-shadow: 10px 10px 0px #ACA7CB;
+                }
+
+                img {
+                    margin-top: 30px;
+                }
+
+                span {
+                    margin-top: 20px;
+                }
+
+                h3 {
+                    margin-top: 15px;
+                }
+
+                p {
+                    margin: 20px 0 10px 0;
+                    line-height: 22px;
+                    border-bottom: 0.5px solid $gray2;
+                    padding-bottom: 5px;
+                }
+
+                &__more {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    .btn-block {
+                        button {
+                            padding: 5px 10px;
+                            border: 1px solid $gray2;
+                            border-radius: 4px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    span {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .btn-block2 {
+            padding: 100px 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
