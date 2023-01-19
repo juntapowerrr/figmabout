@@ -8,6 +8,7 @@
     <title>Головна</title>
     <link rel="stylesheet" href="styles/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,11 +31,11 @@
                 <p class="txt--xxs txt--red txt--fw400">more<br>about</p>
             </div>
             <ul class="menu">
-                <li><a class="txt--s txt--gray txt--fw700" href="#">Головна</a></li>
-                <li><a class="txt--s txt--gray txt--fw700" href="#">Відеоуроки</a></li>
-                <li><a class="txt--s txt--gray txt--fw700" href="#">Лекції</a></li>
+                <li><a class="txt--s txt--gray txt--fw700" href="index.html">Головна</a></li>
+                <li><a class="txt--s txt--gray txt--fw700 flowing-scroll" href="#vid">Відеоуроки</a></li>
+                <li><a class="txt--s txt--gray txt--fw700 flowing-scroll" href="#lec">Лекції</a></li>
                 <li><a class="txt--s txt--gray txt--fw700" href="#">Завдання</a></li>
-                <li><a class="txt--s txt--gray txt--fw700" href="#">Додатково</a></li>
+                <li><a class="txt--s txt--gray txt--fw700 flowing-scroll" href="#dod">Додатково</a></li>
             </ul>
         </div>
     </header>
@@ -52,7 +53,7 @@
                 застосунків, створювати інтерактивні прототипи, бачити
                 історію усіх версій продукту та багато іншого!
             </p>
-            <button class="btn hv-btn wow animate__animated animate__flipInX" data-wow-delay="1s">Детальніше</button>
+            <button class="btn hv-btn wow animate__animated animate__flipInX" onclick="window.open('https://www.figma.com/community')" data-wow-delay="1s">Детальніше</button>
             <div class="cards">
                 <div class="card bgc--white hv wow animate__animated animate__zoomInLeft" data-wow-delay="1s">
                     <img src="./assets/svg/card1.svg" alt="Зображення картки з тестами">
@@ -71,7 +72,7 @@
     </div>
     <div class="lections-section bgc--second">
         <div class="lections-section__wrapper container">
-            <h2 class="txt--xl txt--gray txt--fw700 txt--center wow animate__animated animate__zoomIn">Лекції</h2>
+            <h2 class="txt--xl txt--gray txt--fw700 txt--center wow animate__animated animate__zoomIn" id="lec">Лекції</h2>
             <div class="cards">
                 <div class="card wow animate__animated animate__bounceIn">
                     <div class="card__about">
@@ -85,8 +86,7 @@
                     </div>
                     <div class="card__more">
                         <button class="hv-btn2">Тест</button>
-                        <a href="#" class="txt--xxs txt--gray txt--fw700 hv-red"
-                            onclick="window.open('https://frusia.pro/ru/p/7')">Детальніше</a>
+                        <a href="https://drive.google.com/file/d/1C4z8VL6BjKg2euoTjmsN5EmwfOlKTLAo/view?usp=share_link" class="txt--xxs txt--gray txt--fw700 hv-red" target="_blank">Детальніше</a>
                     </div>
                 </div>
                 <div class="card wow animate__animated animate__bounceIn">
@@ -101,8 +101,7 @@
                     </div>
                     <div class="card__more">
                         <button class="hv-btn2">Тест</button>
-                        <a href="#" class="txt--xxs txt--gray txt--fw700 hv-red"
-                            onclick="window.open('https://frusia.pro/ru/p/8')">Детальніше</a>
+                        <a href="https://drive.google.com/file/d/1qpw3ztOMqAJD54df-1mP_EhQFcU8ZO9_/view?usp=share_link" class="txt--xxs txt--gray txt--fw700 hv-red" target="_blank">Детальніше</a>
                     </div>
                 </div>
                 <div class="card wow animate__animated animate__bounceIn">
@@ -116,8 +115,7 @@
                     </div>
                     <div class="card__more">
                         <button class="hv-btn2">Тест</button>
-                        <a href="#" class="txt--xxs txt--gray txt--fw700 hv-red"
-                            onclick="window.open('https://frusia.pro/ru/p/9')">Детальніше</a>
+                        <a href="https://drive.google.com/file/d/1s2Ogbq9zufjZtLBnjXHw6Q5Zv9n90F3O/view?usp=share_link" class="txt--xxs txt--gray txt--fw700 hv-red" target="_blank">Детальніше</a>
                     </div>
                 </div>
                 <div class="card wow animate__animated animate__bounceIn">
@@ -132,19 +130,18 @@
                     </div>
                     <div class="card__more">
                         <button class="hv-btn2">Тест</button>
-                        <a href="#" class="txt--xxs txt--gray txt--fw700 hv-red"
-                            onclick="window.open('https://frusia.pro/ru/p/10')">Детальніше</a>
+                        <a href="https://frusia.pro/ru/p/10" class="txt--xxs txt--gray txt--fw700 hv-red" target="_blank">Детальніше</a>
                     </div>
                 </div>
             </div>
             <div class="btn-block">
-                <button class="btn hv-btn wow animate__animated animate__flipInX">Всі лекції</button>
+                <button class="btn hv-btn wow animate__animated animate__flipInX" onclick="window.open('https://frusia.pro/ru/p/6')">Всі лекції</button>
             </div>
         </div>
     </div>
     <div class="lessons-section bgc--second">
         <div class="lessons-section__wrapper container">
-            <h2 class="txt--xl txt--black txt--fw700 txt--center wow animate__animated animate__zoomIn">Відеоуроки</h2>
+            <h2 class="txt--xl txt--black txt--fw700 txt--center wow animate__animated animate__zoomIn" id="vid">Відеоуроки</h2>
             <div class="arrows">
                 <img class="hv wow animate__animated animate__pulse" src="./assets/svg/arrowbl.svg"
                     alt="Зображення елемента лівої стрілки">
@@ -175,13 +172,13 @@
                 </div>
             </div>
             <div class="btn-block">
-                <button class="btn hv-btn wow animate__animated animate__flipInX">Всі відеоуроки</button>
+                <button class="btn hv-btn wow animate__animated animate__flipInX" onclick="window.open('https://www.youtube.com/playlist?list=PLzdgHk8HLzxX8kIFbX1Xun_IaLV9JQ1Dm')">Всі відеоуроки</button>
             </div>
         </div>
     </div>
     <div class="links-section bgc--second">
         <div class="links-section__wrapper container">
-            <h2 class="txt--xl txt--gray txt--fw700 txt--center wow animate__animated animate__zoomIn">Корисні посилання
+            <h2 class="txt--xl txt--gray txt--fw700 txt--center wow animate__animated animate__zoomIn" id="dod">Корисні посилання
             </h2>
             <p class="txt--m txt--gray2 txt--fw500 txt--center wow animate__animated animate__zoomIn">Статті, відео.</p>
             <div class="cards">
@@ -221,11 +218,12 @@
                 </div>
             </div>
             <div class="btn-block2">
-                <button class="btn hv-btn wow animate__animated animate__flipInX">Всі посилання</button>
+                <button class="btn hv-btn wow animate__animated animate__flipInX" onclick="window.open('https://www.uprock.ru/tags/interfaces')">Всі посилання</button>
             </div>
         </div>
     </div>
     <script src="./javascript/wow.min.js"></script>
+    <script src="javascript/scroll.js"></script>
     <script>
         new WOW().init();
     </script>
